@@ -1,0 +1,661 @@
+[
+  {
+    "category": "handwoven saree",
+    "material_keywords": [
+      "cotton",
+      "khadi",
+      "simple",
+      "daily wear"
+    ],
+    "price_min": 800,
+    "price_max": 1500
+  },
+  {
+    "category": "handwoven saree",
+    "material_keywords": [
+      "cotton",
+      "zari",
+      "border",
+      "festive"
+    ],
+    "price_min": 1500,
+    "price_max": 3000
+  },
+  {
+    "category": "handwoven saree",
+    "material_keywords": [
+      "silk",
+      "pure silk",
+      "bridal",
+      "heavy"
+    ],
+    "price_min": 5000,
+    "price_max": 12000
+  },
+  {
+    "category": "handwoven saree",
+    "material_keywords": [
+      "linen",
+      "modern",
+      "lightweight"
+    ],
+    "price_min": 2000,
+    "price_max": 4000
+  },
+  {
+    "category": "handwoven saree",
+    "material_keywords": [
+      "chanderi",
+      "silk blend",
+      "transparent"
+    ],
+    "price_min": 3000,
+    "price_max": 6000
+  },
+  {
+    "category": "handwoven saree",
+    "material_keywords": [
+      "banarasi",
+      "brocade",
+      "traditional"
+    ],
+    "price_min": 6000,
+    "price_max": 15000
+  },
+  {
+    "category": "block-print textile",
+    "material_keywords": [
+      "cotton",
+      "kurta",
+      "floral",
+      "sanganeri"
+    ],
+    "price_min": 600,
+    "price_max": 1200
+  },
+  {
+    "category": "block-print textile",
+    "material_keywords": [
+      "bedsheet",
+      "king size",
+      "cotton",
+      "jaipuri"
+    ],
+    "price_min": 1200,
+    "price_max": 2500
+  },
+  {
+    "category": "block-print textile",
+    "material_keywords": [
+      "dupatta",
+      "chiffon",
+      "light",
+      "indigo"
+    ],
+    "price_min": 400,
+    "price_max": 900
+  },
+  {
+    "category": "block-print textile",
+    "material_keywords": [
+      "cushion cover",
+      "set of 5",
+      "home decor"
+    ],
+    "price_min": 500,
+    "price_max": 1000
+  },
+  {
+    "category": "block-print textile",
+    "material_keywords": [
+      "scarf",
+      "silk",
+      "hand block",
+      "ajrakh"
+    ],
+    "price_min": 800,
+    "price_max": 1800
+  },
+  {
+    "category": "block-print textile",
+    "material_keywords": [
+      "fabric",
+      "unstitched",
+      "yardage",
+      "dabu"
+    ],
+    "price_min": 300,
+    "price_max": 800
+  },
+  {
+    "category": "terracotta pottery",
+    "material_keywords": [
+      "clay",
+      "pot",
+      "planter",
+      "garden"
+    ],
+    "price_min": 200,
+    "price_max": 600
+  },
+  {
+    "category": "terracotta pottery",
+    "material_keywords": [
+      "kulhad",
+      "tea cup",
+      "set of 6",
+      "earthen"
+    ],
+    "price_min": 150,
+    "price_max": 400
+  },
+  {
+    "category": "terracotta pottery",
+    "material_keywords": [
+      "vase",
+      "decorative",
+      "painted",
+      "home decor"
+    ],
+    "price_min": 400,
+    "price_max": 1000
+  },
+  {
+    "category": "terracotta pottery",
+    "material_keywords": [
+      "wall hanging",
+      "wind chime",
+      "rustic"
+    ],
+    "price_min": 300,
+    "price_max": 800
+  },
+  {
+    "category": "terracotta pottery",
+    "material_keywords": [
+      "serving bowl",
+      "glazed",
+      "kitchen",
+      "microwave safe"
+    ],
+    "price_min": 500,
+    "price_max": 1200
+  },
+  {
+    "category": "terracotta pottery",
+    "material_keywords": [
+      "diya",
+      "lamp",
+      "festival",
+      "set of 10"
+    ],
+    "price_min": 100,
+    "price_max": 300
+  },
+  {
+    "category": "bamboo basketry",
+    "material_keywords": [
+      "bamboo",
+      "basket",
+      "storage",
+      "woven"
+    ],
+    "price_min": 400,
+    "price_max": 900
+  },
+  {
+    "category": "bamboo basketry",
+    "material_keywords": [
+      "cane",
+      "tray",
+      "serving",
+      "kitchen"
+    ],
+    "price_min": 300,
+    "price_max": 700
+  },
+  {
+    "category": "bamboo basketry",
+    "material_keywords": [
+      "laundry basket",
+      "large",
+      "eco-friendly",
+      "lid"
+    ],
+    "price_min": 1000,
+    "price_max": 2500
+  },
+  {
+    "category": "bamboo basketry",
+    "material_keywords": [
+      "planter stand",
+      "rattan",
+      "indoor",
+      "decor"
+    ],
+    "price_min": 800,
+    "price_max": 1800
+  },
+  {
+    "category": "bamboo basketry",
+    "material_keywords": [
+      "fruit bowl",
+      "handwoven",
+      "natural"
+    ],
+    "price_min": 200,
+    "price_max": 500
+  },
+  {
+    "category": "bamboo basketry",
+    "material_keywords": [
+      "lamp shade",
+      "pendant",
+      "ceiling",
+      "boho"
+    ],
+    "price_min": 600,
+    "price_max": 1500
+  },
+  {
+    "category": "brass handicraft",
+    "material_keywords": [
+      "brass",
+      "idol",
+      "statue",
+      "god",
+      "pooja"
+    ],
+    "price_min": 1000,
+    "price_max": 5000
+  },
+  {
+    "category": "brass handicraft",
+    "material_keywords": [
+      "lamp",
+      "diya",
+      "traditional",
+      "heavy"
+    ],
+    "price_min": 800,
+    "price_max": 2500
+  },
+  {
+    "category": "brass handicraft",
+    "material_keywords": [
+      "urlis",
+      "decorative bowl",
+      "floating candles"
+    ],
+    "price_min": 1500,
+    "price_max": 4000
+  },
+  {
+    "category": "brass handicraft",
+    "material_keywords": [
+      "bell",
+      "hanging",
+      "temple",
+      "vintage"
+    ],
+    "price_min": 500,
+    "price_max": 1500
+  },
+  {
+    "category": "brass handicraft",
+    "material_keywords": [
+      "showpiece",
+      "animal",
+      "figurine",
+      "antique finish"
+    ],
+    "price_min": 1200,
+    "price_max": 3000
+  },
+  {
+    "category": "brass handicraft",
+    "material_keywords": [
+      "kitchenware",
+      "thali set",
+      "dinnerware",
+      "copper blend"
+    ],
+    "price_min": 2000,
+    "price_max": 6000
+  },
+  {
+    "category": "wooden toys",
+    "material_keywords": [
+      "wood",
+      "educational",
+      "puzzle",
+      "kids",
+      "non-toxic"
+    ],
+    "price_min": 300,
+    "price_max": 800
+  },
+  {
+    "category": "wooden toys",
+    "material_keywords": [
+      "stacking",
+      "ring",
+      "toddler",
+      "channapatna"
+    ],
+    "price_min": 250,
+    "price_max": 600
+  },
+  {
+    "category": "wooden toys",
+    "material_keywords": [
+      "rocking horse",
+      "large",
+      "play",
+      "handcrafted"
+    ],
+    "price_min": 1500,
+    "price_max": 4000
+  },
+  {
+    "category": "wooden toys",
+    "material_keywords": [
+      "spinning top",
+      "lattu",
+      "set of 3",
+      "colors"
+    ],
+    "price_min": 150,
+    "price_max": 400
+  },
+  {
+    "category": "wooden toys",
+    "material_keywords": [
+      "pull along",
+      "animal toy",
+      "wheels"
+    ],
+    "price_min": 400,
+    "price_max": 900
+  },
+  {
+    "category": "wooden toys",
+    "material_keywords": [
+      "board game",
+      "chess",
+      "ludo",
+      "carved"
+    ],
+    "price_min": 800,
+    "price_max": 2000
+  },
+  {
+    "category": "jute products",
+    "material_keywords": [
+      "jute",
+      "bag",
+      "tote",
+      "shopping",
+      "eco-friendly"
+    ],
+    "price_min": 200,
+    "price_max": 600
+  },
+  {
+    "category": "jute products",
+    "material_keywords": [
+      "rug",
+      "carpet",
+      "floor",
+      "braided",
+      "round"
+    ],
+    "price_min": 1000,
+    "price_max": 3000
+  },
+  {
+    "category": "jute products",
+    "material_keywords": [
+      "placemat",
+      "table",
+      "dining",
+      "set of 6"
+    ],
+    "price_min": 400,
+    "price_max": 1000
+  },
+  {
+    "category": "jute products",
+    "material_keywords": [
+      "file folder",
+      "office",
+      "handmade",
+      "stationery"
+    ],
+    "price_min": 150,
+    "price_max": 400
+  },
+  {
+    "category": "jute products",
+    "material_keywords": [
+      "planter basket",
+      "macrame",
+      "hanging",
+      "rope"
+    ],
+    "price_min": 300,
+    "price_max": 800
+  },
+  {
+    "category": "jute products",
+    "material_keywords": [
+      "laptop sleeve",
+      "padded",
+      "zipper"
+    ],
+    "price_min": 500,
+    "price_max": 1200
+  },
+  {
+    "category": "embroidered textile",
+    "material_keywords": [
+      "embroidery",
+      "phulkari",
+      "dupatta",
+      "heavy",
+      "wedding"
+    ],
+    "price_min": 1500,
+    "price_max": 4000
+  },
+  {
+    "category": "embroidered textile",
+    "material_keywords": [
+      "chikankari",
+      "kurti",
+      "cotton",
+      "lucknowi"
+    ],
+    "price_min": 800,
+    "price_max": 2500
+  },
+  {
+    "category": "embroidered textile",
+    "material_keywords": [
+      "kantha",
+      "quilt",
+      "bed cover",
+      "patchwork"
+    ],
+    "price_min": 2000,
+    "price_max": 5000
+  },
+  {
+    "category": "embroidered textile",
+    "material_keywords": [
+      "cushion cover",
+      "mirror work",
+      "gujarati",
+      "set of 2"
+    ],
+    "price_min": 600,
+    "price_max": 1200
+  },
+  {
+    "category": "embroidered textile",
+    "material_keywords": [
+      "wall hanging",
+      "toran",
+      "door",
+      "festive"
+    ],
+    "price_min": 400,
+    "price_max": 900
+  },
+  {
+    "category": "embroidered textile",
+    "material_keywords": [
+      "bag",
+      "clutch",
+      "zardozi",
+      "party wear"
+    ],
+    "price_min": 1000,
+    "price_max": 2500
+  },
+  {
+    "category": "leather crafts",
+    "material_keywords": [
+      "leather",
+      "wallet",
+      "mens",
+      "genuine",
+      "tooled"
+    ],
+    "price_min": 500,
+    "price_max": 1500
+  },
+  {
+    "category": "leather crafts",
+    "material_keywords": [
+      "bag",
+      "messenger",
+      "laptop",
+      "vintage",
+      "goat leather"
+    ],
+    "price_min": 2000,
+    "price_max": 5000
+  },
+  {
+    "category": "leather crafts",
+    "material_keywords": [
+      "journal",
+      "diary",
+      "handmade paper",
+      "embossed"
+    ],
+    "price_min": 300,
+    "price_max": 800
+  },
+  {
+    "category": "leather crafts",
+    "material_keywords": [
+      "footwear",
+      "mojari",
+      "jutti",
+      "traditional"
+    ],
+    "price_min": 600,
+    "price_max": 1800
+  },
+  {
+    "category": "leather crafts",
+    "material_keywords": [
+      "belt",
+      "handcrafted",
+      "buckle",
+      "casual"
+    ],
+    "price_min": 400,
+    "price_max": 1000
+  },
+  {
+    "category": "leather crafts",
+    "material_keywords": [
+      "backpack",
+      "travel",
+      "rugged",
+      "large"
+    ],
+    "price_min": 2500,
+    "price_max": 6000
+  },
+  {
+    "category": "stone carving",
+    "material_keywords": [
+      "stone",
+      "marble",
+      "coaster",
+      "inlay work",
+      "set of 4"
+    ],
+    "price_min": 500,
+    "price_max": 1200
+  },
+  {
+    "category": "stone carving",
+    "material_keywords": [
+      "statue",
+      "buddha",
+      "soapstone",
+      "carved",
+      "decor"
+    ],
+    "price_min": 1000,
+    "price_max": 3000
+  },
+  {
+    "category": "stone carving",
+    "material_keywords": [
+      "mortar and pestle",
+      "khalbatta",
+      "kitchen",
+      "heavy"
+    ],
+    "price_min": 400,
+    "price_max": 1000
+  },
+  {
+    "category": "stone carving",
+    "material_keywords": [
+      "box",
+      "jewelry box",
+      "jaali work",
+      "fretsaw"
+    ],
+    "price_min": 600,
+    "price_max": 1500
+  },
+  {
+    "category": "stone carving",
+    "material_keywords": [
+      "incense holder",
+      "agarbatti stand",
+      "ash catcher"
+    ],
+    "price_min": 200,
+    "price_max": 500
+  },
+  {
+    "category": "stone carving",
+    "material_keywords": [
+      "elephant",
+      "showpiece",
+      "undercut",
+      "intricate"
+    ],
+    "price_min": 800,
+    "price_max": 2500
+  }
+]

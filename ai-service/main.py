@@ -236,3 +236,64 @@ async def generate_listing(
         "title_hi": title_hi,
         "description_hi": description_hi
     }
+
+from pydantic import BaseModel
+from typing import List
+
+try:
+    from rapidfuzz import process, fuzz
+except ImportError:
+    pass
+
+class PriceSuggestionRequest(BaseModel):
+    description: str
+    keywords: List[str]
+
+# Load seed dataset once into memory
+PRICES_DB_PATH = os.path.join(os.path.dirname(__file__), "data", "comparable_prices.json")
+comparable_prices = []
+if os.path.exists(PRICES_DB_PATH):
+    with open(PRICES_DB_PATH, "r", encoding="utf-8") as f:
+        comparable_prices = json.load(f)
+
+@app.post("/suggest-price")
+async def suggest_price(request: PriceSuggestionRequest):
+    if not comparable_prices:
+        raise HTTPException(status_code=500, detail="Pricing dataset not found.")
+
+    query_text = request.description + " " + " ".join(request.keywords)
+    
+    # We will build a mapping of target strings to dataset entries
+    # to use with rapidfuzz.process.extractOne
+    target_strings = []
+    for entry in comparable_prices:
+        target = entry["category"] + " " + " ".join(entry["material_keywords"])
+        target_strings.append(target)
+        
+    # Fuzzy match using token_set_ratio which ignores word order and duplicates
+    match = process.extractOne(query_text, target_strings, scorer=fuzz.token_set_ratio)
+    
+    if match:
+        best_target, score, best_index = match
+        if score > 45: # Threshold for a reasonable match
+            matched_entry = comparable_prices[best_index]
+            pmin = matched_entry["price_min"]
+            pmax = matched_entry["price_max"]
+            cat = matched_entry["category"]
+            
+            return {
+                "price_min": pmin,
+                "price_max": pmax,
+                "currency": "INR",
+                "reasoning": f"Similar {cat} items are typically listed between ₹{pmin}-{pmax}",
+                "matched_category": cat
+            }
+
+    # Fallback if no match or low score
+    return {
+        "price_min": 500,
+        "price_max": 2000,
+        "currency": "INR",
+        "reasoning": "No close match found — showing a general handicraft price range",
+        "matched_category": "handicraft, general"
+    }
