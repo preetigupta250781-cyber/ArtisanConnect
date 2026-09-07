@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+python-multipart
+rembg
+onnxruntime
+pillow
+opencv-python-headless
+rapidfuzz
+requests
+python-dotenv
+bhashini_translator
