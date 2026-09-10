@@ -193,7 +193,7 @@ async def generate_listing(
             "response_format": {"type": "json_object"}
         }
         
-        groq_response = requests.post("https://api.groq.com/openai/v1/chat/completions", headers=headers, json=payload)
+        groq_response = requests.post("https://api.groq.com/openai/v1/chat/completions", headers=headers, json=payload, timeout=10)
         groq_response.raise_for_status()
         
         result_json = groq_response.json()["choices"][0]["message"]["content"]

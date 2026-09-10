@@ -78,6 +78,7 @@ app.post('/api/products/process-image', upload.single('image'), async (req, res)
         // 1. Call AI service to process the image
         const aiResponse = await axios.post(`${aiServiceUrl}/enhance-image`, formData, {
             headers: formData.getHeaders(),
+            timeout: 10000, // 10 seconds timeout
         });
 
         const base64Image = aiResponse.data.processed_image_base64;
@@ -103,8 +104,9 @@ app.post('/api/products/process-image', upload.single('image'), async (req, res)
 
         res.json({ public_url: publicUrlData.publicUrl });
     } catch (err: any) {
-        console.error('Process image error:', err);
-        res.status(500).json({ error: err.message || 'Error processing image' });
+        console.error('Process image error:', err.message);
+        const errorMessage = err.code === 'ECONNABORTED' ? 'AI Image processing took too long.' : (err.message || 'Error processing image');
+        res.status(502).json({ error: errorMessage });
     }
 });
 
@@ -125,12 +127,14 @@ app.post('/api/products/generate-listing', upload.single('voice_note'), async (r
 
         const aiResponse = await axios.post(`${aiServiceUrl}/generate-listing`, formData, {
             headers: formData.getHeaders(),
+            timeout: 10000,
         });
 
         res.json(aiResponse.data);
     } catch (err: any) {
-        console.error('Generate listing error:', err);
-        res.status(500).json({ error: err.message || 'Error generating listing' });
+        console.error('Generate listing error:', err.message);
+        const errorMessage = err.code === 'ECONNABORTED' ? 'AI Service timed out generating the listing.' : (err.message || 'Error generating listing');
+        res.status(502).json({ error: errorMessage });
     }
 });
 
@@ -143,12 +147,13 @@ app.post('/api/products/suggest-price', async (req, res) => {
         const aiResponse = await axios.post(`${aiServiceUrl}/suggest-price`, {
             description,
             keywords
-        });
+        }, { timeout: 10000 });
 
         res.json(aiResponse.data);
     } catch (err: any) {
-        console.error('Suggest price error:', err);
-        res.status(500).json({ error: err.message || 'Error suggesting price' });
+        console.error('Suggest price error:', err.message);
+        const errorMessage = err.code === 'ECONNABORTED' ? 'AI Pricing suggestion timed out.' : (err.message || 'Error suggesting price');
+        res.status(502).json({ error: errorMessage });
     }
 });
 

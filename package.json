@@ -1,0 +1,15 @@
+{
+  "name": "artisanconnect",
+  "version": "1.0.0",
+  "scripts": {
+    "start:ai": "cd ai-service && .\\venv\\Scripts\\activate && uvicorn main:app --port 8000 --reload",
+    "start:ai:unix": "cd ai-service && source venv/bin/activate && uvicorn main:app --port 8000 --reload",
+    "start:backend": "cd backend && npm run dev",
+    "start:mobile": "cd mobile && npx expo start",
+    "dev": "concurrently \"npm run start:ai\" \"npm run start:backend\" \"npm run start:mobile\"",
+    "dev:unix": "concurrently \"npm run start:ai:unix\" \"npm run start:backend\" \"npm run start:mobile\""
+  },
+  "dependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
